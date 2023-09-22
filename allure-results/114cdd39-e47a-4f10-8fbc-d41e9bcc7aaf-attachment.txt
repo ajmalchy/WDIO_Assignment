@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(), \"email address or mobile number you entered is\")]\"}\n  (Session info: chrome=117.0.5938.92)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF6B1487892+54818]\n\t(No symbol) [0x00007FF6B13F6AC2]\n\t(No symbol) [0x00007FF6B12ADA3B]\n\t(No symbol) [0x00007FF6B12EE4FC]\n\t(No symbol) [0x00007FF6B12EE67C]\n\t(No symbol) [0x00007FF6B1329627]\n\t(No symbol) [0x00007FF6B130EAEF]\n\t(No symbol) [0x00007FF6B13275A2]\n\t(No symbol) [0x00007FF6B130E883]\n\t(No symbol) [0x00007FF6B12E3691]\n\t(No symbol) [0x00007FF6B12E48D4]\n\tGetHandleVerifier [0x00007FF6B17EB992+3610402]\n\tGetHandleVerifier [0x00007FF6B1841860+3962352]\n\tGetHandleVerifier [0x00007FF6B1839D4F+3930847]\n\tGetHandleVerifier [0x00007FF6B1523646+693206]\n\t(No symbol) [0x00007FF6B1401628]\n\t(No symbol) [0x00007FF6B13FD934]\n\t(No symbol) [0x00007FF6B13FDA62]\n\t(No symbol) [0x00007FF6B13EE113]\n\tBaseThreadInitThunk [0x00007FFDAF7D7344+20]\n\tRtlUserThreadStart [0x00007FFDB05E26B1+33]\n"
+}
