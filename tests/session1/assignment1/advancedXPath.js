@@ -28,7 +28,7 @@ describe('advanced xpath test suite', () => {
         const errorMsgDisplayed = await errorMsg.isDisplayed();
         expect(errorMsgDisplayed, 'error message not displayed').to.be.true;
     });
-    it.only('Verify the empty messenger login flow', async () => {
+    it('Verify the empty messenger login flow', async () => {
         // Launch https:www.facebook.com/
         await browser.url('https://www.facebook.com/');
         await browser.pause(2000)
@@ -69,7 +69,8 @@ describe('advanced xpath test suite', () => {
         await browser.pause(5000);
 
         // Verify 'Keep me signed in' checkbox is selected
-        expect(await keepMeSignedIn2.isSelected(), 'Keep me signed in checkbox is not selected').to.be.true;
+        const keepMeSignedIn3 = await $('//*[@class="uiInputLabelLabel"]')
+        expect(await keepMeSignedIn3.isSelected(), 'Keep me signed in checkbox is not selected').to.be.true;
     })
 
 })

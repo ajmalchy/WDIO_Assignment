@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@wdio/cli": "^8.16.10",
-    "chai": "^4.3.8"
+    "chai": "^4.3.8",
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "@wdio/allure-reporter": "^8.16.7",
