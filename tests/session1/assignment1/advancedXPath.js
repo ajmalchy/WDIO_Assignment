@@ -26,7 +26,7 @@ describe('advanced xpath test suite', () => {
         // Verify error msg is displayed
         const errorMsg = await $('//div[contains(text(), "email address or mobile number you entered is")]');
         const errorMsgDisplayed = await errorMsg.isDisplayed();
-        expect(errorMsgDisplayed, 'error message not displayed').to.be.true;
+        expect(await errorMsgDisplayed, 'error message not displayed').to.be.true;
     });
     it('Verify the empty messenger login flow', async () => {
         // Launch https:www.facebook.com/
@@ -64,12 +64,16 @@ describe('advanced xpath test suite', () => {
         
         expect(await keepMeSignedIn2.isSelected(), 'Keep me signed in checkbox is not selected').to.be.false; 
 
+        // console.log("\nkeepMeSignedIn2\n");
+        // console.log(keepMeSignedIn2);
+        // console.log("\nkeepMeSignedIn2\n");
+
         // Click 'Keep me signed in' checkbox
         await keepMeSignedIn2.click();
         await browser.pause(5000);
 
         // Verify 'Keep me signed in' checkbox is selected
-        const keepMeSignedIn3 = await $('//*[@class="uiInputLabelLabel"]')
+        const keepMeSignedIn3 = await $('//input[@name="persistent"]');
         expect(await keepMeSignedIn3.isSelected(), 'Keep me signed in checkbox is not selected').to.be.true;
     })
 

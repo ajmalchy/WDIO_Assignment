@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "#traveler_selector_done_button"
+}

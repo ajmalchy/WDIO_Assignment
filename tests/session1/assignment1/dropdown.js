@@ -14,15 +14,15 @@ describe('dropdown', () => {
     await browser.pause(2000);
 
     // Verify current date is displayed in the birthdate dropdowns.
-    const dayDropdownElement = await('#day');
-    dayDropdownElement.selectByIndex(21);
-    
+    const dayDropdownElement = await $('#day');
+    await dayDropdownElement.selectByVisibleText("21");
+    await browser.pause(10000);
 
-    const monthDropdownElement = await('#month');
+    const monthDropdownElement = await $('#month');
     monthDropdownElement.selectByIndex(8);
    
 
-    const yearDropElement = await ('#year');
+    const yearDropElement = await $('#year');
     yearDropElement.selectByIndex(0);
     
     // verify the selected options
