@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "<//li[@class=\"navPages-item\"]//a[@aria-expanded=\"false\"]>"
+}

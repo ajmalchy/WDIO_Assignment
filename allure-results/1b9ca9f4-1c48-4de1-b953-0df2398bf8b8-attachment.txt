@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//li[@class=\"navPage-subMenu-item-child\"]//a[contains(text(), \"Church Chairs\")]"
+}
