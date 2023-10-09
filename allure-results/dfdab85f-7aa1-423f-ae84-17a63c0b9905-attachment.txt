@@ -1,0 +1,6 @@
+{
+  "script": "return (async clickLoginBtn(){\r\n        await $(this.loginBtn).click();\r\n    }).apply(null, arguments)",
+  "args": [
+    null
+  ]
+}

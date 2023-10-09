@@ -18,7 +18,7 @@ describe('Multiple windows', () => {
         await browser.pause(2000);
         await $('//a[text()="Instagram"]').click();
         await browser.pause(2000);
-
+    //  6. Close all tabs except Instagram
         const allHandles = await browser.getWindowHandles();
         for (const handle of allHandles) {
             await browser.switchToWindow(handle);
@@ -26,12 +26,12 @@ describe('Multiple windows', () => {
             if (title.localeCompare('Instagram') !== 0) {
                 await browser.closeWindow();
                 await browser.pause(2000);
-
                 break;
             }
+        //   7. Click 'sign up' on Instagram
             await $('//a[text()="Sign up"]').click();
             await browser.pause(5000);
-
+        // 8. Verify "Have an account? Log in" is displayed
         expect(await $('//a[text()="Log in"]/preceding :: p').isDisplayed(), 'Log in not displayed').to.be.true();
         
         expect(await $('//a[text()="Log in"]').isDisplayed(), 'Log in not displayed').to.be.true();
